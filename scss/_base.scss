@@ -1,0 +1,73 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+    background: $color-dark_1;
+    color: $color-white;
+}
+
+html, body {
+    &._overflow {
+        overflow: hidden;
+    }
+}
+
+a {
+    color: $color-white;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1180px;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+ }
+
+hr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.title {
+    @include text($font, 700, 44px, 52px, $color-white);
+    margin-bottom: 17px;
+    span {
+        color: $color-primary;
+    }
+}
+
+.desc {
+    @include text($font, 400, 16px, 160%, $color-body);
+    max-width: 460px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 13px 18px;
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+    background: $color-primary;
+    border-radius: $radius-btn;
+    transition: $transition;
+    @include text($font, 500, 16px, 19px, $color-white);
+    &:hover {
+        background: darken($color-primary, 5%);
+    }
+}

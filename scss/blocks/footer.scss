@@ -1,0 +1,34 @@
+.footer {
+    background:$color-dark_2;
+    &__item {
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-between;
+        @include tablet-small {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    &__desc {
+        @include text($font, 400, 16px, 19px, $color-white);
+        span {
+            color: $color-primary;
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 34px;
+        min-width: 320px;
+        @include tablet-small {
+            justify-content: center;
+        }
+    }
+
+    &__img {
+        cursor: pointer;
+    }
+}
