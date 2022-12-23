@@ -505,7 +505,7 @@ hr {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
-  gap: 27px;
+  gap: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,6 +518,9 @@ hr {
               flex-direction: column; }
       .main-screen__subtitle span {
         display: none; } }
+  @media (max-width: 576px) {
+    .main-screen__subtitle {
+      gap: 0; } }
 .main-screen__desc {
   max-width: 557px;
   margin-bottom: 24px;
@@ -750,8 +753,12 @@ hr {
     color: #9B968B;
     margin-bottom: 35px; }
   .pricing__btn {
+    background: #2D2B29;
+    border: 1px solid;
     margin-top: 35px;
     margin-bottom: 35px; }
+    .pricing__btn:hover {
+      background: #ED9902; }
   .pricing__li {
     display: -webkit-box;
     display: -ms-flexbox;

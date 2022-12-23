@@ -30,7 +30,7 @@
     align-items: center;
     text-transform: uppercase;
     @include text($font, 500, 18px, 21px, $color-white);
-    gap: 27px;
+    gap: 20px;
     display: flex;
     margin-bottom: 24px;
     @include tablet-small {
@@ -39,7 +39,9 @@
         display: none;
       }
     }
-    
+    @include mobile {
+      gap: 0;
+    }
   }
 
   &__desc {
@@ -264,8 +266,13 @@
   }
 
   &__btn {
+    background: $color-dark_2;
+    border: 1px solid;
     margin-top: 35px;
     margin-bottom: 35px;
+    &:hover {
+      background: $color-primary;
+    }
   }
 
   &__li {
