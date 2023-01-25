@@ -1,0 +1,44 @@
+.touch {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  
+  input {
+    background: $color-dark_1;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    padding: 14px 16px;
+    color: $color-white;
+    outline: none;
+  }
+  
+  input::placeholder {
+    @include text($font, 400, 14px, 17px, $color-body);
+  }
+  
+  textarea {
+    max-height: 200px;
+    background: $color-dark_1;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    padding: 14px 16px;
+    resize: vertical;
+    min-height: 120px;
+    outline: none;
+    @include text($font, 400, 14px, 17px, $color-white);
+  }
+  
+  textarea::placeholder {
+    @include text($font, 400, 14px, 17px, $color-body);
+  }
+  
+  input:focus,
+  textarea:focus {
+    border: 1px solid $color-primary;
+  }

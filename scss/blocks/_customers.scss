@@ -1,0 +1,40 @@
+.customers {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    &__list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+      @include tablet-small {
+        grid-template-columns: 1fr;
+      }
+    }
+  
+    .customer {
+      background: $color-dark_2;
+      border-radius: 8px;
+      padding: 32px;
+      &__desc {
+        margin-bottom: 28px;
+        @include text($font, 400, 18px, 160%, $color-white);
+      }
+  
+      &__info {
+        display: flex;
+        gap: 20px;
+      }
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+      &__title {
+        @include text($font, 500, 18px, 160%, $color-white);
+      }
+  
+      &__subtitle {
+        @include text($font, 400, 18px, 160%, $color-primary);
+      }
+    }
+  }

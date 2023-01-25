@@ -307,7 +307,9 @@ template {
 [hidden] {
   display: none; }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -316,8 +318,12 @@ body {
   background: #21201E;
   color: #FFFFFF; }
 
-html._overflow, body._overflow {
+html._overflow,
+body._overflow {
   overflow: hidden; }
+
+html {
+  scroll-behavior: smooth; }
 
 a {
   color: #FFFFFF;
@@ -329,12 +335,6 @@ ul {
 li {
   list-style: none; }
 
-.container {
-  max-width: 1180px;
-  padding: 0 20px;
-  width: 100%;
-  margin: 0 auto; }
-
 img {
   max-width: 100%;
   height: auto;
@@ -343,6 +343,12 @@ img {
 
 hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+
+.container {
+  max-width: 1180px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto; }
 
 .title {
   font-family: "Rubik", sans-serif;
@@ -364,8 +370,8 @@ hr {
   margin-bottom: 40px; }
 
 .btn {
-  padding: 13px 18px;
   display: inline-block;
+  padding: 13px 18px;
   border: 0;
   cursor: pointer;
   background: #ED9902;
@@ -378,7 +384,9 @@ hr {
   line-height: 19px;
   color: #FFFFFF; }
   .btn:hover {
-    background: #d48902; }
+    background: #21201E;
+    color: #ED9902;
+    outline: 1px solid #ED9902; }
 
 .header {
   display: -webkit-box;
@@ -478,6 +486,9 @@ hr {
       -webkit-box-direction: reverse;
           -ms-flex-direction: column-reverse;
               flex-direction: column-reverse; } }
+  @media (max-width: 768px) {
+    .main-screen__body {
+      gap: 30px; } }
 .main-screen__info {
   -ms-flex-negative: 0;
       flex-shrink: 0; }
@@ -515,7 +526,8 @@ hr {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      gap: 0; }
       .main-screen__subtitle span {
         display: none; } }
   @media (max-width: 576px) {
@@ -826,6 +838,7 @@ input::placeholder {
   color: #9B968B; }
 
 textarea {
+  max-height: 200px;
   background: #21201E;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 4px;
@@ -878,6 +891,9 @@ textarea:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
@@ -914,4 +930,6 @@ textarea:focus {
             -ms-flex-pack: center;
                 justify-content: center; } }
   .footer__img {
+    width: 30px;
+    height: 30px;
     cursor: pointer; }

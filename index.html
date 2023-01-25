@@ -16,7 +16,7 @@
 
 <body id="body">
     <div class="container">
-        <div class="main-screen">
+        <div id="main-screen" class="main-screen">
 
             <header class="header">
                 <a href="#" class="header__logo">
@@ -29,12 +29,12 @@
                 </div>
                 <nav id="nav" class="header-nav">
                     <ul class="header-nav__ul">
-                        <li class="header-nav__li"><a class="header-nav__a" href="#">About</a></li>
-                        <li class="header-nav__li"><a class="header-nav__a" href="#">Services</a></li>
-                        <li class="header-nav__li"><a class="header-nav__a" href="#">Portfolio</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a" href="#main-screen">About</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a" href="#services">Services</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a" href="#portfolio">Portfolio</a></li>
                         <li class="header-nav__li"><a class="header-nav__a" href="#">Testimonials</a></li>
-                        <li class="header-nav__li"><a class="header-nav__a" href="#">Prcing</a></li>
-                        <li class="header-nav__li"><a class="header-nav__a" href="#">Contact</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a" href="#pricing">Pricing</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a" href="#touch">Contact</a></li>
                     </ul>
                     <span id="icon-close" onclick="navToggle()" class="material-icons">
                         close
@@ -61,7 +61,7 @@
 
         <hr>
 
-        <div class="services">
+        <div id="services" class="services">
             <div class="title">My <span>Services</span></div>
             <p class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo
                 pellentesque tristique aliquet turpis. Morbi risus imperdiet</p>
@@ -149,13 +149,13 @@
 
         <hr>
 
-        <div class="portfolio">
+        <div id="portfolio" class="portfolio">
             <div class="title">My <span>Portfolio</span></div> 
             <p class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo
                 pellentesque tristique aliquet turpis. Morbi risus imperdiet</p>
             <div class="portfolio__list">
                 <div class="portfolio__image">
-                    <a href="#"><img class="portfolio__img" src="./image/portfolio/portfolio-item.jpg" alt="Portfolio img"></a>
+                    <a href="#"><img class="portfolio__img"src="./image/portfolio/portfolio-item.jpg" alt="Portfolio img"></a>
                     <div class="portfolio__circle">
                         <span class="material-symbols-outlined">search</span>
                     </div>
@@ -264,7 +264,7 @@
 
         <hr>
 
-        <div class="pricing">
+        <div id="pricing" class="pricing">
             <div class="title">My <span>Pricing</span></div>
             <p class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo
                 pellentesque tristique aliquet turpis. Morbi risus imperdiet
@@ -388,7 +388,7 @@
 
         <hr>
 
-        <div class="touch">    
+        <div id="touch" class="touch">    
             <div class="title">Get in <span>touch</span></div>
             <p class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo
                 pellentesque tristique aliquet turpis. Morbi risus imperdiet
@@ -404,12 +404,12 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__item">
-                <p class="footer__desc">© 2020 All rights reserved. Designed by <span>Max</span></p>
+                <p class="footer__desc">© 2022 All rights reserved. Designed by <span>Max</span></p>
                 <div class="footer__social">
-                        <img class="footer__img" src="./image/social/twitter.svg" alt="Twitter">
-                        <img class="footer__img" src="./image/social/gitHub.svg" alt="GitHub">
-                        <img class="footer__img" src="./image/social/linkedIn.svg" alt="LinkedIn">
-                        <img class="footer__img" src="./image/social/instagram.svg" alt="Instagram">
+                    <img class="footer__img" src="./image/social/twitter.svg" alt="Twitter">
+                    <img class="footer__img" src="./image/social/gitHub.svg" alt="GitHub">
+                    <img class="footer__img" src="./image/social/linkedIn.svg" alt="LinkedIn">
+                    <img class="footer__img" src="./image/social/instagram.svg" alt="Instagram">
                 </div>
             </div>
         </div>

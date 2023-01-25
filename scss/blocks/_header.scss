@@ -55,19 +55,15 @@
             background: rgba(0, 0, 0, 0.8);
             transform: translateY(-150%);
             transition: $transition;
-            
-
             .header-nav__ul {
                 height: 100%;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
             }
-
             .header-nav__a {
                 font-size: 18px;
             }
-
             &._active {
                 transform: translateY(0);
             }

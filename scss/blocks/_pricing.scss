@@ -1,0 +1,55 @@
+.pricing {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 26px;
+        @include tablet-small {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        padding: 32px;
+        background: #2d2b29;
+        border-radius: 8px;
+    }
+
+    &__title {
+        @include text($font, 500, 16px, 19px, $color-white);
+        text-transform: uppercase;
+        margin-bottom: 14px;
+    }
+
+    &__price {
+        @include text($font, 500, 44px, 52px, $color-white);
+        text-transform: uppercase;
+        margin-bottom: 14px;
+    }
+
+    &__desc {
+        @include text($font, 400, 14px, 160%, $color-body);
+        margin-bottom: 35px;
+    }
+
+    &__btn {
+        background: $color-dark_2;
+        border: 1px solid;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        &:hover {
+            background: $color-primary;
+        }
+    }
+
+    &__li {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        @include text($font, 400, 14px, 19px, $color-body);
+        span {
+            color: $color-white;
+        }
+    }
+}
