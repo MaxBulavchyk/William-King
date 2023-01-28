@@ -437,7 +437,7 @@ hr {
     color: #FFFFFF;
     -webkit-transition: 0.2s all ease-in-out;
     transition: 0.2s all ease-in-out; }
-    .header-nav__a._active, .header-nav__a:hover {
+    .header-nav__a:hover {
       color: #ED9902; }
   @media (max-width: 1200px) {
     .header-nav {
@@ -639,9 +639,7 @@ hr {
     @media (max-width: 576px) {
       .portfolio__list {
         grid-template-columns: 1fr;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; } }
+        justify-items: center; } }
   .portfolio__image {
     position: relative; }
     .portfolio__image:hover .portfolio__image,

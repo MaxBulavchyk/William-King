@@ -39,7 +39,6 @@
         &__a {
             @include text($font, 400, 16px, 19px, $color-white);
             transition: $transition;
-            &._active,
             &:hover {
                 color: $color-primary;
             }
