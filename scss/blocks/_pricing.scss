@@ -53,3 +53,25 @@
         }
     }
 }
+
+// Carousel
+#html .owl-theme {
+    .owl-dots {
+        height: 20px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 25;
+        .owl-dot {
+            span {
+                background: $color-gray;
+            }
+            &.active {
+                span {
+                    background: $color-dark_2;
+                }
+            }
+        }
+    }
+}
+// Carousel End

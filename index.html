@@ -7,11 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>William King</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./plagins/owl.carousel.css">
+    <link rel="stylesheet" href="./plagins/owl.theme.default.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
 </head>
 
 <body id="body" onclick="_overflow">
@@ -29,12 +33,18 @@
                 </div>
                 <nav id="nav" class="header-nav">
                     <ul class="header-nav__ul">
-                        <li class="header-nav__li"><a class="header-nav__a _active" onclick="navToggle()" href="#main-screen">About</a></li>
-                        <li class="header-nav__li"><a class="header-nav__a _active" onclick="navToggle()" href="#services">Services</a></li>
-                        <li class="header-nav__li"><a class="header-nav__a _active" onclick="navToggle()" href="#portfolio">Portfolio</a></li>
-                        <li class="header-nav__li"><a class="header-nav__a _active" onclick="navToggle()" href="#testimonials">Testimonials</a></li>
-                        <li class="header-nav__li"><a class="header-nav__a _active" onclick="navToggle()" href="#pricing">Pricing</a></li>
-                        <li class="header-nav__li"><a class="header-nav__a _active" onclick="navToggle()" href="#touch">Contact</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a _active" onclick="navClose()"
+                                href="#main-screen">About</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a _active" onclick="navClose()"
+                                href="#services">Services</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a _active" onclick="navClose()"
+                                href="#portfolio">Portfolio</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a _active" onclick="navClose()"
+                                href="#testimonials">Testimonials</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a _active" onclick="navClose()"
+                                href="#pricing">Pricing</a></li>
+                        <li class="header-nav__li"><a class="header-nav__a _active" onclick="navClose()"
+                                href="#touch">Contact</a></li>
                     </ul>
                     <span id="icon-close" onclick="navToggle()" class="material-icons">
                         close
@@ -45,8 +55,12 @@
             <div class="main-screen__body">
                 <div class="main-screen__info">
                     <h1 class="main-screen__title">I’m William K.</h1>
-                    <h3 class="main-screen__subtitle"><p>Web Designer</p><span>/</span><p>UI Designer</p><span>/</span><p>Graphic
-                        designer</p></h3>
+                    <h3 class="main-screen__subtitle">
+                        <p>Web Designer</p><span>/</span>
+                        <p>UI Designer</p><span>/</span>
+                        <p>Graphic
+                            designer</p>
+                    </h3>
                     <p class="main-screen__desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis
                         dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet</p>
                     <button class="btn main-screen__btn">Explore My Work</button>
@@ -150,33 +164,37 @@
         <hr>
 
         <div id="portfolio" class="portfolio">
-            <div class="title">My <span>Portfolio</span></div> 
+            <div class="title">My <span>Portfolio</span></div>
             <p class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo
                 pellentesque tristique aliquet turpis. Morbi risus imperdiet</p>
             <div class="portfolio__list">
                 <div class="portfolio__image">
-                    <a href="#"><img class="portfolio__img"src="./image/portfolio/portfolio-item.jpg" alt="Portfolio img"></a>
+                    <a href="#"><img class="portfolio__img" src="./image/portfolio/portfolio-item.jpg"
+                            alt="Portfolio img"></a>
                     <div class="portfolio__circle">
                         <span class="material-symbols-outlined">search</span>
                     </div>
                 </div>
 
                 <div class="portfolio__image">
-                    <a href="#"><img class="portfolio__img" src="./image/portfolio/portfolio-item-2.jpg" alt="Portfolio img"></a>
+                    <a href="#"><img class="portfolio__img" src="./image/portfolio/portfolio-item-2.jpg"
+                            alt="Portfolio img"></a>
                     <div class="portfolio__circle">
                         <span class="material-symbols-outlined">search</span>
                     </div>
                 </div>
 
                 <div class="portfolio__image">
-                    <a href="#"><img class="portfolio__img" src="./image/portfolio/portfolio-item-4.jpg" alt="Portfolio img"></a>
+                    <a href="#"><img class="portfolio__img" src="./image/portfolio/portfolio-item-4.jpg"
+                            alt="Portfolio img"></a>
                     <div class="portfolio__circle">
                         <span class="material-symbols-outlined">search</span>
                     </div>
                 </div>
 
                 <div class="portfolio__image">
-                    <a href="#"><img class="portfolio__img" src="./image/portfolio/portfolio-item-1.jpg" alt="Portfolio img">
+                    <a href="#"><img class="portfolio__img" src="./image/portfolio/portfolio-item-1.jpg"
+                            alt="Portfolio img">
                     </a>
                     <div class="portfolio__circle">
                         <span class="material-symbols-outlined">search</span>
@@ -184,14 +202,16 @@
                 </div>
 
                 <div class="portfolio__image">
-                    <a href="#"><img class="portfolio__img" src="./image/portfolio/portfolio-item-3.jpg" alt="Portfolio img"></a>
+                    <a href="#"><img class="portfolio__img" src="./image/portfolio/portfolio-item-3.jpg"
+                            alt="Portfolio img"></a>
                     <div class="portfolio__circle">
                         <span class="material-symbols-outlined">search</span>
                     </div>
                 </div>
 
                 <div class="portfolio__image">
-                    <a href="#"><img class="portfolio__img" src="./image/portfolio/portfolio-item-5.jpg" alt="Portfolio img"></a>
+                    <a href="#"><img class="portfolio__img" src="./image/portfolio/portfolio-item-5.jpg"
+                            alt="Portfolio img"></a>
                     <div class="portfolio__circle">
                         <span class="material-symbols-outlined">search</span>
                     </div>
@@ -208,7 +228,8 @@
 
             <div class="customers__list">
                 <div class="customers__item customer">
-                    <div class="customer__desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet</div>
+                    <div class="customer__desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis
+                        dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet</div>
                     <div class="customer__info">
                         <div class="customer__img">
                             <img src="./image/customers/customers 1.png" alt="Customer image">
@@ -221,7 +242,8 @@
                 </div>
 
                 <div class="customers__item customer">
-                    <div class="customer__desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet</div>
+                    <div class="customer__desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis
+                        dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet</div>
                     <div class="customer__info">
                         <div class="customer__img">
                             <img src="./image/customers/customers 2.png" alt="Customer image">
@@ -234,7 +256,8 @@
                 </div>
 
                 <div class="customers__item customer">
-                    <div class="customer__desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet</div>
+                    <div class="customer__desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis
+                        dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet</div>
                     <div class="customer__info">
                         <div class="customer__img">
                             <img src="./image/customers/customers 3.png" alt="Customer image">
@@ -247,7 +270,8 @@
                 </div>
 
                 <div class="customers__item customer">
-                    <div class="customer__desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet</div>
+                    <div class="customer__desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis
+                        dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet</div>
                     <div class="customer__info">
                         <div class="customer__img">
                             <img src="./image/customers/customers 4.png" alt="Customer image">
@@ -270,117 +294,122 @@
                 pellentesque tristique aliquet turpis. Morbi risus imperdiet
             </p>
             <div class="pricing__list">
-                <div class="pricing__item">
-                    <div class="pricing__title">
-                        Silver
+                <div class="owl-carousel owl-theme">
+                    <div class="pricing__item">
+                        <div class="pricing__title">
+                            Silver
+                        </div>
+                        <div class="pricing__price">
+                            $99.0
+                        </div>
+                        <div class="pricing__desc">
+                            Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo
+                            pellentesque tristique aliquet turpis. Morbi risus imperdiet
+                        </div>
+                        <hr>
+                        <button class="btn pricing__btn">Get Started</button>
+                        <div class="pricing__card">
+                            <ul class="pricing__ul">
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="pricing__price">
-                        $99.0
-                    </div>
-                    <div class="pricing__desc">
-                        Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet
-                    </div>
-                    <hr>
-                    <button class="btn pricing__btn">Get Started</button>
-                    <div class="pricing__card">
-                        <ul class="pricing__ul">
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                        </ul>
-                    </div>
-                </div>
 
-                <div class="pricing__item">
-                    <div class="pricing__title">
-                        Silver
+                    <div class="pricing__item">
+                        <div class="pricing__title">
+                            Silver
+                        </div>
+                        <div class="pricing__price">
+                            $99.0
+                        </div>
+                        <div class="pricing__desc">
+                            Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo
+                            pellentesque tristique aliquet turpis. Morbi risus imperdiet
+                        </div>
+                        <hr>
+                        <button class="btn pricing__btn">Get Started</button>
+                        <div class="pricing__card">
+                            <ul class="pricing__ul">
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="pricing__price">
-                        $99.0
-                    </div>
-                    <div class="pricing__desc">
-                        Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet
-                    </div>
-                    <hr>
-                    <button class="btn pricing__btn">Get Started</button>
-                    <div class="pricing__card">
-                        <ul class="pricing__ul">
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="pricing__item">
-                    <div class="pricing__title">
-                        Silver
-                    </div>
-                    <div class="pricing__price">
-                        $99.0
-                    </div>
-                    <div class="pricing__desc">
-                        Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo pellentesque tristique aliquet turpis. Morbi risus imperdiet
-                    </div>
-                    <hr>
-                    <button class="btn pricing__btn">Get Started</button>
-                    <div class="pricing__card">
-                        <ul class="pricing__ul">
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                            <li class="pricing__li">
-                                <span class="material-symbols-outlined">done
-                                </span>12 GB Free space
-                            </li> 
-                        </ul>
+
+                    <div class="pricing__item">
+                        <div class="pricing__title">
+                            Silver
+                        </div>
+                        <div class="pricing__price">
+                            $99.0
+                        </div>
+                        <div class="pricing__desc">
+                            Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo
+                            pellentesque tristique aliquet turpis. Morbi risus imperdiet
+                        </div>
+                        <hr>
+                        <button class="btn pricing__btn">Get Started</button>
+                        <div class="pricing__card">
+                            <ul class="pricing__ul">
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                                <li class="pricing__li">
+                                    <span class="material-symbols-outlined">done
+                                    </span>12 GB Free space
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -388,14 +417,14 @@
 
         <hr>
 
-        <div id="touch" class="touch">    
+        <div id="touch" class="touch">
             <div class="title">Get in <span>touch</span></div>
             <p class="desc">Rutrum cursus varius ullamcorper venenatis faucibus lobortis turpis dignissim. Commodo
                 pellentesque tristique aliquet turpis. Morbi risus imperdiet
             <form action="#" class="touch__form">
-                    <input type="text" placeholder="Enter Your Name"> 
-                    <input type="text" placeholder="Enter your email address"> 
-                    <textarea placeholder="Enter Message"></textarea>
+                <input type="text" placeholder="Enter Your Name">
+                <input type="text" placeholder="Enter your email address">
+                <textarea placeholder="Enter Message"></textarea>
             </form>
             <button class="btn touch__btn">Send Message</button>
         </div>
@@ -415,9 +444,9 @@
         </div>
     </footer>
 
-
-
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="owl.carousel.min.js"></script>
     <script src="script.js"></script>
 </body>
 

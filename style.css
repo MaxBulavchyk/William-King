@@ -785,6 +785,18 @@ hr {
     .pricing__li span {
       color: #FFFFFF; }
 
+#html .owl-theme .owl-dots {
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 25; }
+  #html .owl-theme .owl-dots .owl-dot span {
+    background: #A19A8B; }
+  #html .owl-theme .owl-dots .owl-dot.active span {
+    background: #2D2B29; }
+
 .touch {
   margin-top: 90px;
   margin-bottom: 90px; }
